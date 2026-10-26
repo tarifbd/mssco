@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import {
   ShieldCheck,
@@ -56,33 +57,19 @@ export default function AboutPage() {
       <section className="bg-white py-16 sm:py-24 border-b border-borderline">
         <div className="mx-auto max-w-container px-4 sm:px-6">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-start">
-            {/* Left Column: Principal CA Portrait Placeholder Card (4 cols) */}
+            {/* Left Column: Principal CA Portrait Card (4 cols) */}
             <div className="lg:col-span-4">
               <div className="rounded-2xl border border-borderline bg-surface p-6 shadow-indigo">
-                {/* Architectural Portrait SVG Placeholder */}
-                <div className="relative overflow-hidden rounded-xl border border-indigo-500/20 bg-indigo-950 aspect-[4/4.5] flex flex-col items-center justify-center p-6 text-center text-white">
-                  <svg
-                    viewBox="0 0 200 200"
-                    className="h-28 w-28 text-violet-100/90"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <circle cx="100" cy="100" r="92" stroke="#6366F1" strokeWidth="2" strokeDasharray="6 6" />
-                    <circle cx="100" cy="76" r="32" fill="#4F46E5" />
-                    <path
-                      d="M44 168C44 137.072 69.0721 112 100 112C130.928 112 156 137.072 156 168"
-                      stroke="#EDE9FE"
-                      strokeWidth="10"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                  <p className="mt-4 font-heading text-sm font-bold uppercase tracking-wider text-violet-100">
-                    [Principal CA Portrait Placeholder]
-                  </p>
-                  <p className="mt-1 text-xs text-indigo-50/75">
-                    Replace with professional photograph of {siteConfig.ownerName} in <code className="text-violet-100">/public/images/</code>
-                  </p>
+                {/* Official Portrait of Mohammad Sirajus Salekin, FCA */}
+                <div className="relative overflow-hidden rounded-xl border border-indigo-500/25 bg-indigo-50 aspect-[4/4.5] shadow-sm">
+                  <Image
+                    src={siteConfig.ownerPhoto}
+                    alt={`${siteConfig.ownerName} — Proprietor and Principal of ${siteConfig.firmName}`}
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 380px"
+                    className="object-cover object-top"
+                  />
                 </div>
 
                 <div className="mt-6">

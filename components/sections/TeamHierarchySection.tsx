@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import {
   ShieldCheck,
   Award,
@@ -47,14 +48,15 @@ export function TeamHierarchySection() {
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-brand-gradient" aria-hidden="true" />
 
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-              {/* Principal Monogram Avatar Placeholder */}
-              <div className="flex h-24 w-24 shrink-0 flex-col items-center justify-center rounded-2xl bg-indigo-950 text-white shadow-md border border-indigo-500/30">
-                <span className="font-heading text-2xl font-extrabold tracking-tight bg-brand-gradient bg-clip-text text-transparent">
-                  CA
-                </span>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-violet-100 mt-0.5">
-                  Principal
-                </span>
+              {/* Principal & Proprietor Portrait */}
+              <div className="relative h-32 w-28 sm:h-36 sm:w-32 shrink-0 overflow-hidden rounded-2xl border-2 border-indigo-500/30 bg-indigo-50 shadow-md">
+                <Image
+                  src={principal.photo}
+                  alt={`${principal.name} — ${principal.designation}`}
+                  fill
+                  sizes="(max-width: 640px) 112px, 128px"
+                  className="object-cover object-top"
+                />
               </div>
 
               <div className="flex-1 text-center sm:text-left">
