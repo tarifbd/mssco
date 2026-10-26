@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --indigo-950: #1E1B4B;
+  --indigo-800: #3730A3;
+  --indigo-600: #4F46E5;
+  --indigo-500: #6366F1;
+  --violet-600: #7C3AED;
+  --violet-500: #8B5CF6;
+  --violet-100: #EDE9FE;
+  --indigo-50: #EEF2FF;
+  --ink-900: #111827;
+  --ink-600: #4B5563;
+  --ink-400: #9CA3AF;
+  --bg: #FFFFFF;
+  --surface: #F8FAFF;
+  --border: #E5E7EB;
+  --signature-gradient: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+  color: var(--ink-900);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink-900);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Visible Violet Focus Rings for Keyboard Navigation */
+:focus-visible {
+  outline: 2px solid var(--violet-600);
+  outline-offset: 2px;
+}
+
+/* Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

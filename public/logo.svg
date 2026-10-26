@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <defs>
+    <linearGradient id="logo-grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" y="4" rx="14" fill="#1E1B4B"/>
+  <rect x="2.5" y="6.5" width="51" height="51" rx="11.5" stroke="url(#logo-grad)" stroke-width="1.5" stroke-opacity="0.7"/>
+  <path d="M25 19H18.5C15.7386 19 13.5 21.2386 13.5 24V40C13.5 42.7614 15.7386 45 18.5 45H25" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M29.5 45L36.5 19L43.5 45" stroke="url(#logo-grad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31.5 38H41.5" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="72" y="31" fill="#1E1B4B" font-family="Plus Jakarta Sans, Inter, sans-serif" font-weight="800" font-size="20" letter-spacing="-0.02em">[FIRM NAME]</text>
+  <text x="72" y="49" fill="#4F46E5" font-family="Inter, sans-serif" font-weight="600" font-size="11" letter-spacing="0.12em">CHARTERED ACCOUNTANTS</text>
+</svg>

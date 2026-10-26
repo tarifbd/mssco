@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#32059B"/>
+  <!-- Rising Zig-Zag Arrow from M Peak -->
+  <path d="M25 28L35 17L42 24L51 15" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 14H52V22" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bold MSS Monogram -->
+  <text x="8" y="47" fill="#FFFFFF" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="22" letter-spacing="-0.03em">MSS</text>
+</svg>
