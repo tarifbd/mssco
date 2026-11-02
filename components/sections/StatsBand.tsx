@@ -1,32 +1,21 @@
-'use client';
+import { ShieldCheck, FileCheck2, Landmark } from 'lucide-react';
 
-import React from 'react';
-import { siteConfig } from '@/content/site';
-import { AnimatedCounter } from '@/components/ui/AnimatedCounter';
-import { useLanguage } from '@/components/layout/LanguageProvider';
+const principles = [
+  { icon: ShieldCheck, title: 'Independent assurance', detail: 'Audit and financial reporting' },
+  { icon: FileCheck2, title: 'Practical tax guidance', detail: 'Income tax, VAT and filing support' },
+  { icon: Landmark, title: 'Business compliance', detail: 'Corporate and regulatory advisory' },
+];
 
 export function StatsBand() {
-  const { locale } = useLanguage();
-
   return (
-    <section aria-label="Practice Metrics" className="bg-surface border-b border-borderline py-12 sm:py-16">
-      <div className="mx-auto max-w-container px-4 sm:px-6">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {siteConfig.stats.map((stat) => (
-            <div
-              key={stat.id}
-              className="rounded-2xl border border-borderline bg-white p-6 shadow-indigo transition-transform hover:-translate-y-0.5"
-            >
-              <div className="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight bg-brand-gradient bg-clip-text text-transparent tabular-nums">
-                <AnimatedCounter value={stat.value} suffix={stat.suffix} />
-              </div>
-              <p className="mt-2 font-heading text-base font-bold text-indigo-950">
-                {locale === 'bn' ? stat.labelBn : stat.label}
-              </p>
-              <p className="mt-1 text-xs font-medium text-ink-600">{stat.description}</p>
-            </div>
-          ))}
-        </div>
+    <section aria-label="Our practice at a glance" className="border-b border-borderline bg-white">
+      <div className="mx-auto grid max-w-container gap-6 px-5 py-8 sm:px-6 md:grid-cols-3 md:gap-8 md:py-10">
+        {principles.map(({ icon: Icon, title, detail }) => (
+          <div key={title} className="flex items-center gap-4 md:border-l md:border-borderline md:pl-6 first:md:border-0 first:md:pl-0">
+            <Icon className="h-7 w-7 shrink-0 text-indigo-600" aria-hidden="true" />
+            <div><h2 className="text-sm font-semibold text-indigo-950">{title}</h2><p className="mt-1 text-xs leading-relaxed text-ink-600">{detail}</p></div>
+          </div>
+        ))}
       </div>
     </section>
   );

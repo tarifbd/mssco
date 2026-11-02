@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --indigo-950: #1E1B4B;
-  --indigo-800: #3730A3;
-  --indigo-600: #4F46E5;
+  --indigo-950: #241b38;
+  --indigo-800: #4e3185;
+  --indigo-600: #6542a6;
   --indigo-500: #6366F1;
-  --violet-600: #7C3AED;
+  --violet-600: #7050b0;
   --violet-500: #8B5CF6;
   --violet-100: #EDE9FE;
-  --indigo-50: #EEF2FF;
+  --indigo-50: #f0ecf7;
   --ink-900: #111827;
   --ink-600: #4B5563;
   --ink-400: #9CA3AF;
   --bg: #FFFFFF;
-  --surface: #F8FAFF;
-  --border: #E5E7EB;
-  --signature-gradient: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  --surface: #f8f7fa;
+  --border: #e7e4ec;
+  --signature-gradient: linear-gradient(135deg, #6542a6 0%, #7050b0 100%);
   color-scheme: light;
 }
 
@@ -54,4 +54,65 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Quiet surfaces and a consistent editorial rhythm. */
+::selection { background: #e6def7; color: #261a45; }
+section[id], [id="enquiry-form"] { scroll-margin-top: 8rem; }
+a, button { -webkit-tap-highlight-color: transparent; }
+button, summary { cursor: pointer; }
+
+/* Shared card and process interactions. */
+.service-card { isolation: isolate; overflow: hidden; }
+.service-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(ellipse at top right, #f0ecf7, transparent 70%);
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+.service-card::after {
+  content: '';
+  position: absolute;
+  inset: auto 1.75rem 0;
+  height: 3px;
+  background: var(--signature-gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease;
+  pointer-events: none;
+}
+.service-card:focus-within::before { opacity: 1; }
+.service-card:focus-within::after { transform: scaleX(1); }
+.process-line {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #6542a6, #c7b5e5);
+  transform-origin: left;
+}
+.process-card { transition: border-color 250ms ease, box-shadow 250ms ease; }
+.consultation-panel::before {
+  content: '';
+  position: absolute;
+  width: 30rem;
+  aspect-ratio: 1;
+  right: -10rem;
+  top: -12rem;
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4rem rgb(255 255 255 / 3%), 0 0 0 8rem rgb(255 255 255 / 3%);
+  pointer-events: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .service-card:hover::before { opacity: 1; }
+  .service-card:hover::after { transform: scaleX(1); }
+  .process-card:hover { border-color: #b5a0d7; box-shadow: 0 14px 36px rgb(38 26 60 / 8%); }
+}
+@media (max-width: 1023px) {
+  .process-line { display: none; }
 }

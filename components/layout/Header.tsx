@@ -141,22 +141,22 @@ export function Header() {
   return (
     <header
       ref={navRef}
-      className={`sticky top-0 z-50 w-full transition-all duration-200 ${
+      className={`site-header sticky top-0 z-50 w-full transition-all duration-200 ${
         scrolled
           ? 'bg-white/95 backdrop-blur-md shadow-header border-b border-borderline'
           : 'bg-white border-b border-borderline'
       }`}
     >
       {/* Top Institutional Credential Strip */}
-      <div className="hidden lg:block bg-surface border-b border-borderline">
+      <div className="utility-strip hidden xl:block bg-surface border-b border-borderline">
         <div className="mx-auto flex max-w-container items-center justify-between gap-4 px-6 py-2 text-xs text-ink-600">
           <div className="flex items-center gap-3 overflow-hidden">
             <span className="whitespace-nowrap inline-flex items-center gap-1.5 font-semibold text-indigo-950">
               <Shield className="h-3.5 w-3.5 text-indigo-600 shrink-0" aria-hidden="true" />
-              Proprietorship of {siteConfig.ownerName} (Member, ICAB)
+              Independent Chartered Accountancy Practice
             </span>
             <span className="text-borderline" aria-hidden="true">|</span>
-            <span className="truncate">{siteConfig.location.addressLine}</span>
+            <span className="truncate">Dhaka, Bangladesh</span>
           </div>
           <div className="flex items-center gap-4 shrink-0 whitespace-nowrap">
             <span className="inline-flex items-center gap-1.5">
@@ -192,7 +192,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation with Rich Dropdowns */}
-        <nav aria-label="Main Navigation" className="hidden lg:flex items-center gap-1.5">
+        <nav aria-label="Main Navigation" className="hidden xl:flex items-center gap-1.5">
           {/* 1. Home */}
           <Link
             href="/"
@@ -503,10 +503,10 @@ export function Header() {
         </nav>
 
         {/* Desktop Primary Action CTA (Strictly Single-Line, Zero Wrapping) */}
-        <div className="hidden lg:flex items-center shrink-0">
+        <div className="hidden xl:flex items-center shrink-0">
           <Link
             href="/contact"
-            className="whitespace-nowrap inline-flex items-center gap-2 rounded-xl bg-brand-gradient px-5 py-2.5 text-sm font-bold text-white shadow-indigo transition-all hover:opacity-95 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2"
+            className="whitespace-nowrap inline-flex items-center gap-2 rounded-none bg-indigo-950 px-5 py-3 text-sm font-bold text-white shadow-indigo transition-all hover:opacity-95 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2"
           >
             <span>Book a Consultation</span>
             <ArrowUpRight className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -514,7 +514,7 @@ export function Header() {
         </div>
 
         {/* Mobile Menu Trigger */}
-        <div className="flex items-center lg:hidden">
+        <div className="flex items-center xl:hidden">
           <button
             type="button"
             aria-expanded={mobileMenuOpen}
@@ -536,7 +536,7 @@ export function Header() {
       {mobileMenuOpen && (
         <div
           id="mobile-nav-drawer"
-          className="lg:hidden max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-borderline bg-white px-4 pt-3 pb-8 shadow-indigo-lg"
+          className="xl:hidden max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-borderline bg-white px-4 pt-3 pb-8 shadow-indigo-lg"
         >
           <nav aria-label="Mobile Navigation" className="flex flex-col space-y-1.5">
             <Link

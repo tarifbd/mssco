@@ -9,13 +9,13 @@ interface CtaBannerProps {
 }
 
 export function CtaBanner({
-  title = 'Ready to Bring Clarity to Your Audit, Tax & Regulatory Compliance?',
+  title = 'Let’s talk about what comes next.',
   subtitle = `Schedule a confidential initial consultation with ${siteConfig.ownerName} (${siteConfig.ownerCredentials}) to discuss your organisation’s statutory requirements or personal tax filing.`,
 }: CtaBannerProps) {
   return (
-    <section className="bg-white py-16 sm:py-24">
+    <section className="contact-chapter bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-container px-4 sm:px-6">
-        <div className="relative overflow-hidden rounded-2xl bg-brand-gradient p-8 sm:p-12 lg:p-14 text-white shadow-indigo-lg">
+        <div data-reveal className="consultation-panel relative overflow-hidden bg-indigo-950 p-8 sm:p-12 lg:p-14 text-white shadow-indigo-lg">
           <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
             <div className="lg:col-span-8">
               <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3.5 py-1 text-xs font-semibold tracking-wider uppercase text-white">

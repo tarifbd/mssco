@@ -38,12 +38,12 @@ const config: Config = {
         bengali: ['var(--font-bengali)', 'sans-serif'],
       },
       boxShadow: {
-        indigo: '0 10px 30px rgba(79, 70, 229, 0.08)',
-        'indigo-lg': '0 20px 40px rgba(79, 70, 229, 0.12)',
+        indigo: '0 10px 30px rgba(38, 26, 60, 0.06)',
+        'indigo-lg': '0 20px 40px rgba(38, 26, 60, 0.10)',
         header: '0 4px 20px rgba(30, 27, 75, 0.06)',
       },
       backgroundImage: {
-        'brand-gradient': 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%)',
+        'brand-gradient': 'linear-gradient(135deg, #6542a6 0%, #7050b0 100%)',
       },
       maxWidth: {
         container: '1200px',

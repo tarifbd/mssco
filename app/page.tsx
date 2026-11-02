@@ -1,9 +1,12 @@
 import React from 'react';
+import { HomeIndex } from '@/components/sections/HomeIndex';
+import { AboutContent } from '@/components/sections/AboutContent';
+import { PageMotion } from '@/components/layout/PageMotion';
 import { HeroGeometric } from '@/components/sections/HeroGeometric';
 import { StatsBand } from '@/components/sections/StatsBand';
 import { ServicesGrid } from '@/components/sections/ServicesGrid';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
-import { TeamHierarchySection } from '@/components/sections/TeamHierarchySection';
+
 import { HowWeWork } from '@/components/sections/HowWeWork';
 import { IndustriesStrip } from '@/components/sections/IndustriesStrip';
 import { InsightsPreview } from '@/components/sections/InsightsPreview';
@@ -12,17 +15,19 @@ import { CtaBanner } from '@/components/sections/CtaBanner';
 
 export default function HomePage() {
   return (
-    <>
+    <PageMotion>
       <HeroGeometric />
+      <HomeIndex />
       <StatsBand />
-      <ServicesGrid />
+      <ServicesGrid limit={6} />
       <WhyChooseUs />
-      <TeamHierarchySection />
+      <AboutContent />
+
       <HowWeWork />
       <IndustriesStrip />
       <InsightsPreview />
       <FaqSection />
       <CtaBanner />
-    </>
+    </PageMotion>
   );
 }

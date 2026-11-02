@@ -13,15 +13,17 @@ export function HowWeWork() {
       <div className="mx-auto max-w-container px-4 sm:px-6">
         <SectionHeader
           eyebrow="Our Methodology"
-          title="How We Work: A Structured 4-Stage Engagement Model"
+          title="A clear process. At every step."
           subtitle="Inspired by global advisory standards and adapted for Bangladeshi regulatory timelines, every engagement follows a predictable, documented workflow from initial diagnosis to final filing."
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="process-grid relative mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="process-line" data-process-line aria-hidden="true" />
           {siteConfig.methodology.map((step) => (
             <div
               key={step.step}
-              className="relative flex flex-col justify-between rounded-2xl border border-borderline bg-surface p-7 shadow-indigo"
+              data-reveal
+              className="process-card relative flex flex-col justify-between rounded-2xl border border-borderline bg-surface p-7 shadow-indigo"
             >
               <div>
                 <div className="flex items-center justify-between border-b border-borderline pb-4">

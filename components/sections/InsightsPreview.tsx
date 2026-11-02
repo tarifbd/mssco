@@ -12,29 +12,30 @@ export function InsightsPreview() {
   const previewArticles = insightsArticles.slice(0, 3);
 
   return (
-    <section className="bg-white py-16 sm:py-24 border-b border-borderline">
+    <section id="perspectives" className="perspectives-section bg-white py-16 sm:py-24 border-b border-borderline">
       <div className="mx-auto max-w-container px-4 sm:px-6">
         <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <SectionHeader
             eyebrow="Insights & Regulatory Guides"
-            title="Practical Tax, VAT & Compliance Briefings"
+            title="A clearer view of what matters."
             subtitle="Clear, plain-language guidance on Bangladesh’s Income Tax Act 2023, VAT & SD Act 2012, RJSC incorporation procedures, and statutory audit readiness."
           />
           <Link
             href="/insights"
-            className="inline-flex items-center gap-2 rounded-xl border border-indigo-600/30 bg-indigo-50 px-5 py-3 text-sm font-semibold text-indigo-800 transition-colors hover:bg-violet-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 shrink-0"
+            className="editorial-text-link text-indigo-800 shrink-0"
           >
             <span>View All Guides &amp; Tax Calendar</span>
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {previewArticles.map((article) => (
+        <div className="editorial-insights mt-12">
+          {previewArticles.map((article, index) => (
             <article
               key={article.slug}
-              className="group relative flex flex-col justify-between rounded-2xl border border-borderline bg-surface p-7 shadow-indigo transition-all hover:-translate-y-1 hover:bg-white hover:border-indigo-500/50"
+              className={`group relative flex flex-col justify-between ${index === 0 ? 'insight-feature' : 'insight-brief'}`}
             >
+              {index === 0 && <div className="insight-art" aria-hidden="true"><span /><span /><span /><p>MSS / PERSPECTIVES</p></div>}
               <div>
                 <div className="flex items-center justify-between gap-2 text-xs">
                   <span className="rounded-full bg-violet-100 px-3 py-1 font-semibold text-indigo-800">

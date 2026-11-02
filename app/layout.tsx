@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import './editorial.css';
 import { siteConfig } from '@/content/site';
 import { LanguageProvider } from '@/components/layout/LanguageProvider';
 import { SkipToContent } from '@/components/layout/SkipToContent';

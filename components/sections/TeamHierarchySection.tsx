@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import { TeamPortrait } from '@/components/ui/TeamPortrait';
 import {
   ShieldCheck,
   Award,
@@ -21,13 +21,13 @@ export function TeamHierarchySection() {
   return (
     <section
       id="team"
-      className="scroll-mt-24 bg-surface py-16 sm:py-24 border-b border-borderline"
+      className="team-section scroll-mt-24 bg-surface py-16 sm:py-24 border-b border-borderline"
     >
       <div className="mx-auto max-w-container px-4 sm:px-6">
         <SectionHeader
           align="center"
           eyebrow="Practice Leadership & Team Structure"
-          title="Four-Tier Engagement Hierarchy: Principal to Manager"
+          title="The people behind your peace of mind."
           subtitle="Structured across four clear accountability tiers—Principal CA at the apex, followed by Partner level, Director level, and dedicated Line Managers—ensuring every client engagement receives both senior sign-off and disciplined day-to-day execution."
         />
 
@@ -49,15 +49,7 @@ export function TeamHierarchySection() {
 
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
               {/* Principal & Proprietor Portrait */}
-              <div className="relative h-32 w-28 sm:h-36 sm:w-32 shrink-0 overflow-hidden rounded-2xl border-2 border-indigo-500/30 bg-indigo-50 shadow-md">
-                <Image
-                  src={principal.photo}
-                  alt={`${principal.name} — ${principal.designation}`}
-                  fill
-                  sizes="(max-width: 640px) 112px, 128px"
-                  className="object-cover object-top"
-                />
-              </div>
+              <TeamPortrait person={principal} />
 
               <div className="flex-1 text-center sm:text-left">
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
@@ -121,10 +113,8 @@ export function TeamHierarchySection() {
                 className="flex flex-col justify-between rounded-2xl border border-indigo-500/30 bg-white p-6 sm:p-7 shadow-indigo transition-transform hover:-translate-y-0.5"
               >
                 <div>
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 font-heading text-sm font-extrabold text-indigo-800 border border-indigo-500/20">
-                      PT
-                    </div>
+                  <div className="flex flex-col items-start gap-3">
+                    <TeamPortrait person={partner} />
                     <span className="rounded-full border border-violet-500/30 bg-violet-100/70 px-3 py-1 text-[11px] font-bold text-indigo-800">
                       {partner.badge}
                     </span>
@@ -185,10 +175,8 @@ export function TeamHierarchySection() {
                 className="flex flex-col justify-between rounded-2xl border border-borderline bg-white p-6 shadow-indigo transition-transform hover:-translate-y-0.5"
               >
                 <div>
-                  <div className="flex items-center justify-between">
-                    <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-950 text-xs font-extrabold text-white">
-                      DIR
-                    </div>
+                  <div className="flex flex-col items-start gap-3">
+                    <TeamPortrait person={director} />
                     <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 tabular-nums">
                       Director 0{idx + 1}
                     </span>
@@ -247,10 +235,8 @@ export function TeamHierarchySection() {
                 className="flex flex-col justify-between rounded-2xl border border-borderline bg-white p-5 shadow-indigo transition-transform hover:-translate-y-0.5"
               >
                 <div>
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-violet-100 text-xs font-extrabold text-indigo-800">
-                      MGR
-                    </span>
+                  <div className="flex flex-col items-start gap-3">
+                    <TeamPortrait person={manager} />
                     <span className="rounded-full bg-indigo-50 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-indigo-800">
                       {manager.department}
                     </span>
@@ -271,7 +257,7 @@ export function TeamHierarchySection() {
 
                 <div className="mt-4 pt-3 border-t border-borderline flex items-center gap-1.5 text-[11px] font-semibold text-ink-600">
                   <UserCheck className="h-3.5 w-3.5 text-indigo-600 shrink-0" aria-hidden="true" />
-                  <span>Edit in /content/site.ts</span>
+                  <span>Engagement management</span>
                 </div>
               </div>
             ))}

@@ -26,11 +26,11 @@ export function WhyChooseUs() {
   const { locale } = useLanguage();
 
   return (
-    <section className="bg-surface py-16 sm:py-24 border-b border-borderline">
+    <section className="principles-section bg-surface py-16 sm:py-24 border-b border-borderline">
       <div className="mx-auto max-w-container px-4 sm:px-6">
         <SectionHeader
           eyebrow="Why Choose Our Practice"
-          title="Partner-Level Accountability Meets Technical Precision"
+          title="Personal accountability. Professional rigour."
           subtitle="Businesses and individual taxpayers choose a Chartered Accountancy proprietorship when they want direct access to the Principal CA, clear written advice, and disciplined compliance without institutional bureaucracy."
         />
 

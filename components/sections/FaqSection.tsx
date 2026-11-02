@@ -30,7 +30,7 @@ export function FaqSection() {
         <SectionHeader
           align="center"
           eyebrow="Frequently Asked Questions"
-          title="Clarity on Audit, NBR Tax, VAT & RJSC Compliance"
+          title="Your questions. Clear answers."
           subtitle="Answers to common questions from company directors, SME owners, foreign investors, and individual taxpayers in Bangladesh."
         />
 
