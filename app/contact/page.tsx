@@ -114,19 +114,13 @@ export default function ContactPage() {
                       <Mail className="h-4 w-4" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="font-bold text-indigo-950">Email Addresses</p>
+                      <p className="font-bold text-indigo-950">Email Address</p>
                       <div className="mt-0.5 space-y-0.5">
                         <a
                           href={`mailto:${siteConfig.contact.emailDisplay}`}
                           className="block text-indigo-600 font-semibold hover:underline break-all"
                         >
                           {siteConfig.contact.emailDisplay}
-                        </a>
-                        <a
-                          href={`mailto:${siteConfig.contact.emailSecondary}`}
-                          className="block text-xs text-ink-600 font-medium hover:text-indigo-600 hover:underline break-all"
-                        >
-                          {siteConfig.contact.emailSecondary}
                         </a>
                       </div>
                     </div>

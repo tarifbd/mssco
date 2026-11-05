@@ -161,12 +161,6 @@ export function Footer() {
                   >
                     {siteConfig.contact.emailDisplay}
                   </a>
-                  <a
-                    href={`mailto:${siteConfig.contact.emailSecondary}`}
-                    className="block text-xs text-indigo-50/80 hover:text-white underline-offset-4 hover:underline break-all"
-                  >
-                    {siteConfig.contact.emailSecondary}
-                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
