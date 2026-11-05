@@ -10,8 +10,8 @@ export const homeFaqs: FaqItem[] = [
   {
     id: 'faq-1',
     category: 'Practice & Governance',
-    question: 'What types of clients does M. S. Salekin & Co. serve in Bangladesh?',
-    questionBn: 'M. S. Salekin & Co. বাংলাদেশে কোন ধরনের ক্লায়েন্টদের সেবা প্রদান করে?',
+    question: 'What types of clients does M.S. Salekin & Co. serve in Bangladesh?',
+    questionBn: 'M.S. Salekin & Co. বাংলাদেশে কোন ধরনের ক্লায়েন্টদের সেবা প্রদান করে?',
     answer:
       'We serve Private and Public Limited Companies, SMEs, family-owned businesses, RMG and industrial manufacturers, commercial importers/exporters, IT/ITES firms, freelancers, local and international NGOs, foreign-invested subsidiaries/branch offices, and individual taxpayers across Bangladesh.',
   },
@@ -69,6 +69,6 @@ export const homeFaqs: FaqItem[] = [
     question: 'How do you protect the confidentiality of our financial and tax records?',
     questionBn: 'আমাদের আর্থিক ও কর সংক্রান্ত তথ্যের গোপনীয়তা কীভাবে রক্ষা করা হয়?',
     answer:
-      'Client confidentiality is a binding obligation under the ICAB Code of Ethics. All documents shared with M. S. Salekin & Co. are restricted strictly to the principal CA and assigned engagement personnel, never disclosed to third parties without your explicit written authorization or legal compulsion, and may be covered by a formal Non-Disclosure Agreement (NDA) upon request.',
+      'Client confidentiality is a binding obligation under the ICAB Code of Ethics. All documents shared with M.S. Salekin & Co. are restricted strictly to the principal CA and assigned engagement personnel, never disclosed to third parties without your explicit written authorization or legal compulsion, and may be covered by a formal Non-Disclosure Agreement (NDA) upon request.',
   },
 ];

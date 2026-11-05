@@ -11,14 +11,14 @@ export function Logo({ variant = 'dark', className = '' }: LogoProps) {
 
   return (
     <div className={`inline-flex items-center gap-3 select-none ${className}`}>
-      <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-xl border border-indigo-500/30 bg-[#32059B] shadow-indigo">
+      <div className={`brand-mark relative h-11 w-11 shrink-0 rounded-xl bg-[#32059B] ${isLight ? 'brand-mark-light' : 'brand-mark-dark'}`}>
         <Image
           src="/logo-mss.jpg"
-          alt="MS Salekin & Co — Chartered Accountants Logo"
+          alt="M.S. Salekin & Co — Chartered Accountants Logo"
           width={88}
           height={88}
           priority
-          className="h-full w-full object-cover"
+          className="relative z-10 h-full w-full rounded-[11px] object-cover"
         />
       </div>
       <div className="flex flex-col">
@@ -27,7 +27,7 @@ export function Logo({ variant = 'dark', className = '' }: LogoProps) {
             isLight ? 'text-white' : 'text-indigo-950'
           }`}
         >
-          MS Salekin &amp; Co
+          M.S. Salekin &amp; Co
         </span>
         <span
           className={`whitespace-nowrap mt-1 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.14em] leading-none ${

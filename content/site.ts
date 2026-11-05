@@ -11,10 +11,10 @@ export interface StatItem {
 }
 
 export const siteConfig = {
-  firmName: 'M. S. Salekin & Co.',
-  firmShortName: 'MS Salekin & Co',
+  firmName: 'M.S. Salekin & Co.',
+  firmShortName: 'M.S. Salekin & Co',
   firmLegalNote:
-    'M. S. Salekin & Co. is a proprietorship Chartered Accountancy practice of Mohammad Sirajus Salekin, FCA.',
+    'M.S. Salekin & Co. is a proprietorship Chartered Accountancy practice of Mohammad Sirajus Salekin, FCA.',
   firmSubline: 'Chartered Accountants',
   ownerName: 'Mohammad Sirajus Salekin, FCA',
   ownerPhoto: '/images/proprietor-salekin.jpg',
@@ -23,7 +23,7 @@ export const siteConfig = {
   tagline: 'Clarity in numbers. Confidence in decisions.',
   taglineBn: 'হিসাবের স্বচ্ছতা। সিদ্ধান্তে আত্মবিশ্বাস।',
   description:
-    'M. S. Salekin & Co. (Chartered Accountants) is a proprietorship practice of Mohammad Sirajus Salekin, FCA located at Purana Paltan Line, Dhaka-1000, Bangladesh, offering statutory audit, NBR income tax, VAT & customs advisory, RJSC & BIDA corporate compliance, bookkeeping, payroll, and business advisory services.',
+    'M.S. Salekin & Co. (Chartered Accountants) is a proprietorship practice of Mohammad Sirajus Salekin, FCA located at Purana Paltan Line, Dhaka-1000, Bangladesh, offering statutory audit, NBR income tax, VAT & customs advisory, RJSC & BIDA corporate compliance, bookkeeping, payroll, and business advisory services.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.mssalekin.com',
   location: {
     addressLine: 'House No: 49/1/B (1st Floor), Purana Paltan Line, Dhaka-1000, Bangladesh',
@@ -191,21 +191,21 @@ export const siteConfig = {
   ],
   about: {
     principalBio: [
-      'Mohammad Sirajus Salekin, FCA, is the Proprietor and Principal of M. S. Salekin & Co., Chartered Accountants. As a Fellow Member (FCA) of The Institute of Chartered Accountants of Bangladesh (ICAB), he established the practice with a singular commitment: bringing institutional-grade audit rigour, tax clarity, and regulatory discipline to businesses and individuals operating in Bangladesh.',
+      'Mohammad Sirajus Salekin, FCA, is the Proprietor and Principal of M.S. Salekin & Co., Chartered Accountants. As a Fellow Member (FCA) of The Institute of Chartered Accountants of Bangladesh (ICAB), he established the practice with a singular commitment: bringing institutional-grade audit rigour, tax clarity, and regulatory discipline to businesses and individuals operating in Bangladesh.',
       'Throughout his professional career, Mohammad Sirajus Salekin, FCA has advised private and public limited companies, small and medium enterprises (SMEs), export-oriented manufacturers, IT exporters, foreign-invested subsidiaries, and non-governmental organisations across statutory audit, direct and indirect taxation, corporate secretarial compliance, and financial systems design.',
     ],
     philosophyQuote:
       '“Reliable financial reporting and proactive tax compliance are not merely statutory obligations—they are the foundation upon which business owners, lenders, and investors make confident decisions.”',
     qualifications: [
       'Fellow Chartered Accountant (FCA) — The Institute of Chartered Accountants of Bangladesh (ICAB)',
-      'Proprietor and Principal — M. S. Salekin & Co., Chartered Accountants',
+      'Proprietor and Principal — M.S. Salekin & Co., Chartered Accountants',
       'Income Tax, VAT & Corporate Regulatory Practice — Bangladesh',
     ],
     careerTimeline: [
       {
         period: 'Present',
         role: 'Proprietor and Principal',
-        organization: 'M. S. Salekin & Co., Chartered Accountants (Purana Paltan Line, Dhaka-1000)',
+        organization: 'M.S. Salekin & Co., Chartered Accountants (Purana Paltan Line, Dhaka-1000)',
         summary:
           'Leading statutory audit, taxation, VAT advisory, RJSC corporate compliance, and financial consultancy engagements for local and international clients.',
       },
@@ -225,7 +225,7 @@ export const siteConfig = {
       },
     ],
     firmStory: [
-      'M. S. Salekin & Co. (Chartered Accountants) is a proprietorship practice founded by Mohammad Sirajus Salekin, FCA, headquartered at Purana Paltan Line, Dhaka-1000, to serve organizations that value direct principal-level engagement alongside methodical technical execution.',
+      'M.S. Salekin & Co. (Chartered Accountants) is a proprietorship practice founded by Mohammad Sirajus Salekin, FCA, headquartered at Purana Paltan Line, Dhaka-1000, to serve organizations that value direct principal-level engagement alongside methodical technical execution.',
       'In Bangladesh’s evolving regulatory landscape—marked by the Income Tax Act 2023, the Value Added Tax and Supplementary Duty Act 2012, digital return platforms, and heightened Financial Reporting Council (FRC) oversight—enterprises require timely, accurate, and candid professional guidance. Our practice bridges the gap between complex statutory texts and day-to-day operational finance.',
     ],
     mission:
@@ -297,7 +297,7 @@ export const siteConfig = {
       designation: 'Proprietor and Principal',
       designationBn: 'প্রোপ্রাইটর ও প্রিন্সিপাল',
       credentials: 'FCA, Fellow Member of ICAB',
-      enrolmentNote: 'M. S. Salekin & Co., Chartered Accountants',
+      enrolmentNote: 'M.S. Salekin & Co., Chartered Accountants',
       bio: 'Leads overall firm governance, engagement quality control, statutory audit sign-off, complex NBR tax & appellate representation, and strategic financial advisory.',
       specializations: [
         'Statutory Audit & Assurance (ISA)',

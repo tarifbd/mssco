@@ -56,6 +56,28 @@ body {
   }
 }
 
+.brand-mark { border: 1.5px solid #fff; }
+.brand-mark::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  pointer-events: none;
+  box-shadow: 0 0 8px #ffffff80, 0 0 18px #d9c5ff55;
+  opacity: .5;
+  animation: brand-halo 4s ease-in-out infinite;
+}
+.brand-mark-light { box-shadow: 0 0 0 1px #ffffff55, 0 0 12px #ffffff30; }
+.brand-mark-dark { box-shadow: 0 0 0 1px #c7b3e6, 0 3px 12px #54278a25; }
+.brand-mark-dark::before { box-shadow: 0 0 12px #b6a0d760; }
+@keyframes brand-halo {
+  0%, 100% { opacity: .35; transform: scale(1); }
+  50% { opacity: .9; transform: scale(1.045); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .brand-mark::before { animation: none; opacity: .6; }
+}
+
 /* Quiet surfaces and a consistent editorial rhythm. */
 ::selection { background: #e6def7; color: #261a45; }
 section[id], [id="enquiry-form"] { scroll-margin-top: 8rem; }

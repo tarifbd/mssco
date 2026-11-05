@@ -42,7 +42,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'ShieldCheck',
     overview: [
       'Independent financial statement assurance is the cornerstone of corporate governance and stakeholder confidence in Bangladesh. Whether required under the Companies Act 1994, the Income Tax Act 2023, or donor grant agreements, an audit must provide more than a procedural signature—it must offer an objective, methodical examination of financial records and internal controls.',
-      'At M. S. Salekin & Co., every assurance engagement is planned and supervised directly by Mohammad Sirajus Salekin, FCA in accordance with International Standards on Auditing (ISA) as adopted in Bangladesh and Financial Reporting Standards (IFRS/BFRS). We maintain strict professional independence and issue clear Management Letters highlighting control observations alongside the formal audit report.',
+      'At M.S. Salekin & Co., every assurance engagement is planned and supervised directly by Mohammad Sirajus Salekin, FCA in accordance with International Standards on Auditing (ISA) as adopted in Bangladesh and Financial Reporting Standards (IFRS/BFRS). We maintain strict professional independence and issue clear Management Letters highlighting control observations alongside the formal audit report.',
     ],
     whoItIsFor: [
       'Private and Public Limited Companies registered with RJSC requiring annual statutory audit',
@@ -142,7 +142,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'Calculator',
     overview: [
       'Bangladesh’s direct tax framework under the Income Tax Act 2023 places heightened emphasis on proof of return submission (PSR), accurate source tax deduction (TDS), and reconciliation between bank flows, assets, and reported income. Both corporate entities and individual taxpayers face financial penalties and disallowed expenses when withholding rules or filing deadlines are overlooked.',
-      'M. S. Salekin & Co. provides structured, compliant income tax advisory and representation before the National Board of Revenue (NBR). We focus on accurate tax computation, lawful rebates and exemptions, timely advance tax deposits, and thorough documentation to withstand Circle assessments.',
+      'M.S. Salekin & Co. provides structured, compliant income tax advisory and representation before the National Board of Revenue (NBR). We focus on accurate tax computation, lawful rebates and exemptions, timely advance tax deposits, and thorough documentation to withstand Circle assessments.',
     ],
     whoItIsFor: [
       'Private and Public Limited Companies, Branches, Liaison Offices, and Partnership Firms',
@@ -241,7 +241,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'Receipt',
     overview: [
       'Under the Value Added Tax and Supplementary Duty Act 2012, VAT compliance in Bangladesh is continuous and transaction-driven. Errors in input tax credit claims, late submission of monthly Mushak 9.1 returns, missing Mushak 6.3 tax invoices, or improper Price Declaration / Input-Output Coefficient (Mushak 4.3) filings can trigger heavy penalties and disallowance of rebates.',
-      'M. S. Salekin & Co. helps manufacturers, service providers, importers, traders, and exporters maintain disciplined VAT books, submit accurate monthly returns by the 15th of every month, and resolve disputes before VAT Commissionerates.',
+      'M.S. Salekin & Co. helps manufacturers, service providers, importers, traders, and exporters maintain disciplined VAT books, submit accurate monthly returns by the 15th of every month, and resolve disputes before VAT Commissionerates.',
     ],
     whoItIsFor: [
       'Manufacturers requiring Input-Output Coefficient (Mushak 4.3) declarations and input tax rebate management',
@@ -335,7 +335,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'Building2',
     overview: [
       'Selecting and maintaining the right legal vehicle in Bangladesh—whether a Private Limited Company, One Person Company (OPC), Partnership Firm, Society, or Foreign Branch/Liaison Office—shapes your tax profile, banking capabilities, and investor readiness.',
-      'M. S. Salekin & Co. handles end-to-end entity formation and ongoing corporate secretarial compliance with the Registrar of Joint Stock Companies and Firms (RJSC), Bangladesh Investment Development Authority (BIDA), City Corporations, and sector regulators.',
+      'M.S. Salekin & Co. handles end-to-end entity formation and ongoing corporate secretarial compliance with the Registrar of Joint Stock Companies and Firms (RJSC), Bangladesh Investment Development Authority (BIDA), City Corporations, and sector regulators.',
     ],
     whoItIsFor: [
       'Founders and entrepreneurs incorporating a Private Limited Company or One Person Company (OPC)',
@@ -428,7 +428,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'BookOpen',
     overview: [
       'Growing SMEs, startups, and foreign subsidiaries in Bangladesh often struggle with fragmented spreadsheets, unrecorded withholding taxes, and delayed monthly closes. Without structured books that align simultaneously with IFRS/BFRS and Bangladesh’s tax/VAT rules, management lacks visibility into real margins and cash flow.',
-      'M. S. Salekin & Co. provides outsourced monthly bookkeeping, financial statement compilation, management information system (MIS) packs, and historical accounting cleanup—giving your leadership team clean, audit-ready financial records every month.',
+      'M.S. Salekin & Co. provides outsourced monthly bookkeeping, financial statement compilation, management information system (MIS) packs, and historical accounting cleanup—giving your leadership team clean, audit-ready financial records every month.',
     ],
     whoItIsFor: [
       'SMEs, startups, and trading firms seeking professional finance function management without hiring a full in-house team',
@@ -520,7 +520,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'Users',
     overview: [
       'Payroll administration in Bangladesh intersects directly with the Income Tax Act 2023 and the Bangladesh Labour Act 2006 (as amended). Employers are legally obligated to compute monthly withholding tax on employee salaries, verify employee PSR submissions, deposit deducted tax to the government treasury on time, and structure terminal benefits accurately.',
-      'M. S. Salekin & Co. provides confidential payroll processing, salary tax structuring, and compliance support for Provident Funds, Gratuity schemes, and Workers’ Profit Participation Fund (WPPF) obligations.',
+      'M.S. Salekin & Co. provides confidential payroll processing, salary tax structuring, and compliance support for Provident Funds, Gratuity schemes, and Workers’ Profit Participation Fund (WPPF) obligations.',
     ],
     whoItIsFor: [
       'Corporate employers seeking confidential outsourced payroll processing and payslip distribution',
@@ -607,7 +607,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'TrendingUp',
     overview: [
       'Strategic capital decisions—raising bank debt, onboarding an equity partner, expanding a factory line, or acquiring a business—require rigorous financial analysis grounded in Bangladesh’s market realities, interest rate environment, and regulatory framework.',
-      'M. S. Salekin & Co. combines Big-4-style financial discipline with practical commercial insight to prepare bankable project profiles, independent valuations, Credit Monitoring Arrangement (CMA) packs, and financial due diligence reports.',
+      'M.S. Salekin & Co. combines Big-4-style financial discipline with practical commercial insight to prepare bankable project profiles, independent valuations, Credit Monitoring Arrangement (CMA) packs, and financial due diligence reports.',
     ],
     whoItIsFor: [
       'Manufacturing and trading enterprises applying for term loans, working capital limits, or syndication finance from banks/NBFIs',
@@ -694,7 +694,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'SearchCheck',
     overview: [
       'As organisations scale across multiple branches, warehouses, or project sites, informal oversight breaks down—leading to procurement leakage, inventory shrinkage, uncollected receivables, and regulatory non-compliance.',
-      'M. S. Salekin & Co. acts as your independent internal audit partner. Rather than producing generic checklists, we test real operational workflows—from purchase requisitions and gate passes to bank reconciliations and credit controls—and design practical Standard Operating Procedures (SOPs) with clear Delegation of Authority (DoA) matrices.',
+      'M.S. Salekin & Co. acts as your independent internal audit partner. Rather than producing generic checklists, we test real operational workflows—from purchase requisitions and gate passes to bank reconciliations and credit controls—and design practical Standard Operating Procedures (SOPs) with clear Delegation of Authority (DoA) matrices.',
     ],
     whoItIsFor: [
       'Mid-to-large family businesses and Private Limited Companies transitioning to professional management',
@@ -780,7 +780,7 @@ export const servicesList: ServiceItem[] = [
     icon: 'Globe',
     overview: [
       'Foreign subsidiaries, joint ventures, and Bangladeshi groups transacting with overseas associated enterprises face strict Transfer Pricing scrutiny from the NBR Transfer Pricing Cell. Where international transactions exceed the statutory threshold (BDT 3 Crore in an income year), taxpayers must maintain contemporaneous Transfer Pricing documentation and submit a Statement of International Transactions alongside a report from a Chartered Accountant.',
-      'M. S. Salekin & Co. advises multinational subsidiaries, sourcing offices, and cross-border service providers on Transfer Pricing compliance, Double Taxation Avoidance Agreement (DTAA) benefits, and withholding tax on outward remittances.',
+      'M.S. Salekin & Co. advises multinational subsidiaries, sourcing offices, and cross-border service providers on Transfer Pricing compliance, Double Taxation Avoidance Agreement (DTAA) benefits, and withholding tax on outward remittances.',
     ],
     whoItIsFor: [
       'Bangladesh subsidiaries and joint ventures transacting with foreign parent or sister companies',
